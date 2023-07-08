@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos en jquery</title>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="02.Eventos.js"></script>
+
+    <style>
+        #caja{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            background: yellow;
+            font-size: 20px;
+        }
+        #caja2{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            background: yellow;
+            font-size: 20px;
+        }
+        input{
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #datos{
+            border: 4px dashed black;
+            padding: 10px;
+            width: 250px;
+            height: 50px;
+            margin-top: 20px;
+            display: block;
+        }
+        #sigueme{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: block;
+            background: rebeccapurple;
+            opacity: 0.5;
+            border: 3px solid black;
+            border-radius: 999px;
+
+        }
+        /* Manera clásica de hacer el hover desde CSS
+        #caja:hover{
+            transition: 300ms all;
+            background: red;
+            cursor: pointer;
+        }*/
+    </style>
+
+</head>
+<body>
+    <h1>Aprendiendo jquery EVENTOS</h1>
+
+    <div id="sigueme"></div>
+
+    <div id="caja">
+        Soy una caja 1
+    </div>
+    <div id="caja2">
+        Soy una caja 2
+    </div>
+
+    <h1>Formulario</h1>
+    <form action="">
+        <input type="text" id="nombre">
+    </form>
+    <div id="datos"></div>
+
+
+</body>
+</html>

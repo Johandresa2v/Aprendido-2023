@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Jquery</title>
+<!--Agrego Jquery minified
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+-->
+<!--Agregado desde archivo descargado -->
+    <script src="jquery-3.7.0.min.js"></script>
+
+<!--Los js deben cargarse después de los jquery-->
+    <script src="01.Selectores.js"></script>
+<!--Código para verificar que el jquery se ejecuta correctamente-->
+    <script>
+        $(document).ready(function(){
+            console.log("Jquery y la web cargado..");
+        });
+    </script>
+    <style>
+        .zebra{
+            border: 2px dashed black;
+            height: 30px;
+            width: 300px;
+        }
+        .texto-grande{
+            font-size: 30px;
+        }
+        .texto-pequeño{
+            font-size: 10px;
+        }
+        .margen-superior{
+            margin-top: 45px;
+            display: block;
+        }
+        .resaltado{
+            border-bottom: 2px solid brown ;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>APrendiendo Jquery</h1>
+
+    <ul>
+        <li><a href="https://www.google.com/" title="Google">Google</a></li>
+        <li><a href="https://sena.territorio.la/cms/index.php" title="SENA">SENA</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Facebook</a></li>
+    </ul>
+<a href=""></a>
+
+    <p id="rojo" class="sin_borde">Ejercicios de Jquery</p>
+    <p id="amarillo" class="zebra">Practicando con selectores</p>
+    <p id="verde" class="sin_borde">Quiero ser un párrafo verde</p>
+    <p class="zebra">Soy un párrafo blanco</p>
+
+    <div id="caja">
+        <p>Hola soy una caja</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li id="elemento2">Elemento 2</li>
+            <li class="resaltado">Elemento 3</li>
+        </ul>
+        <span class="resaltado">Soy un span</span>
+    </div>
+
+
+
+</body>
+</html>

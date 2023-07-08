@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY UI Interfaces</title>
+    <script src="jquery-3.7.0.min.js"></script>
+    <!--Los estilos del JqueryUI deben cargarse antes del jquery-UI.js-->
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.theme.min.css">
+    <!--Jquery UI debe cargarse después del jquery--> 
+    <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="06.Interfaces.js"></script>
+
+    <style>
+        .elemento{
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: lightblue;
+            margin: 20px;
+            float: left;
+        }
+        .lista-seleccionable li{
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            list-style: none;
+            cursor: pointer;
+        }
+        .lista-seleccionable2 li{
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            list-style: none;
+            cursor: pointer;
+        }
+        ul .ui-selecting {
+            background: green;
+        }/*selecting se aplica cuando tenemos presionado y selected cuando soltamos*/
+        ul .ui-selected {
+            background: rgb(70, 108, 233);
+        }
+        #elemento-movido{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+        #area{
+            width: 300px;
+            height: 300px;
+            border: 2px solid blueviolet;
+        }
+        .caja-efectos{
+            width: 300px;
+            height: 200px;
+            border: 4px solid lightblue;
+            background: pink;
+            margin: 20px;
+            float: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>JQUERY UI Interfaces</h1>
+
+    <button id="mostrar">Mostrar</button>
+    <br>
+    <div class="caja-efectos"></div>
+    <br>
+
+
+    <div id="elemento-movido"></div><br>
+    <div id="area"></div>
+
+    
+
+
+
+<h2>Lista selectable que selecciona elementos</h2>
+    <ul class="lista-seleccionable">
+        <li>Johan</li>
+        <li>Miqueas</li>
+        <li>Sol</li>
+        <li>Emmita</li>
+        <li>Patita</li>
+    </ul>
+<h2>Lista sortable que cambia de orden</h2>
+    <ul class="lista-seleccionable2">
+        <li>Johan</li>
+        <li>Miqueas</li>
+        <li>Sol</li>
+        <li>Emmita</li>
+        <li>Patita</li>
+    </ul>
+
+
+    
+    <div class="elemento">
+        Hola soy un elemento de la web 1
+    </div>
+
+    <div class="elemento">
+        Hola soy un elemento de la web 2
+    </div>
+
+    <div class="elemento">
+        Hola soy un elemento de la web 3
+    </div>
+
+    
+    
+</body>
+</html>
