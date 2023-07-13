@@ -36,5 +36,15 @@ $(document).ready(function(){
         //Sacude el elemento de derecha a izquierda y le pongo la velocidad de 4segundos
         $(".caja-efectos").toggle("shake", 4000);
     });
-
+    //Tooltip le pone un efecto especial y estilos al mensaje title que se muestra cuando posas el mouse encima
+    $(document).tooltip();
+    //Dialog muestrra un cuadro de dialogo flotante muy bonito
+    //$("#popup").dialog();
+    $("#mostrar-dialogo").click(function(){
+        $("#popup").dialog();
+    });
+    //Datepicker
+    $("#calendario").datepicker();
+    //Tabs me crea unas pestañas con estilos css
+    $("#pestanas").tabs();
 });
